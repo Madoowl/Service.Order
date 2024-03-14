@@ -1,0 +1,11 @@
+version: '3'
+services:
+  
+  service.order:
+    
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: service.order
+    ports:
+      - 3001:3000
